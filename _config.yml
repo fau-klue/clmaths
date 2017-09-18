@@ -1,0 +1,11 @@
+title: Maths for Computational Linguistics
+description: Basic mathematical concepts for Computer Linguists
+baseurl: "/clmaths"
+url: "http://martialblog.github.io/clmaths"
+github_username: martialblog
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-slate
+plugins:
+  - jekyll-feed
