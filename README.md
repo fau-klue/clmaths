@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/martialblog/clmaths.svg?branch=master)](https://travis-ci.org/martialblog/clmaths)
+
 # Mathematics for Computational Linguistics
 
 This is a small collection of basic mathematics for your off-the-shelf Computer Linguist.
