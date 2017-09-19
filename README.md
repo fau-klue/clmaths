@@ -26,6 +26,14 @@ bundle exec jekyll serve
 
 The site can then be reached at: http://localhost:4000/clmaths/
 
+## Testing
+
+To run the tests in the Rakefile:
+
+```bash
+bundle exec rake test
+```
+
 ## Mathematical Notation
 
 For the mathematical notation we use [MathJax](https://www.mathjax.org/). Formulas can be written in TeX, see the MathJax documentation for details.
