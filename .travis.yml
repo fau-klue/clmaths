@@ -1,8 +1,8 @@
 language: ruby
 rvm:
-- 2.3.3
+- 2.3.5
 
-script: ./script/cibuild
+script: bundle exec rake test
 
 sudo: false
 env:
