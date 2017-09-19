@@ -21,3 +21,7 @@ bundle exec jekyll serve
 ```
 
 The site can then be reached at: http://localhost:4000/clmaths/
+
+## Mathematical Notation
+
+For the mathematical notation we use [MathJax](https://www.mathjax.org/). Formulas can be written in TeX, see the MathJax documentation for details.
