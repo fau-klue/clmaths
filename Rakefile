@@ -1,9 +1,13 @@
 require 'html-proofer'
 
-desc "build and test website"
+desc "Build and test website"
+
 task :test do
+
+  # Will output the _site directory
   sh "bundle exec jekyll build"
 
+  # Options for html-proofer
   options = {
     :disable_external => true,
     :url_swap => {'/clmaths' => ''},

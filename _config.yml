@@ -1,7 +1,10 @@
+# Basic settings
 title: Maths for Computational Linguistics
 description: Basic mathematical concepts for Computer Linguists
 baseurl: "/clmaths"
 url: "https://martialblog.github.io/clmaths"
+
+# GitHub settings
 github_url: "https://github.com/martialblog/clmaths"
 github_username: martialblog
 
