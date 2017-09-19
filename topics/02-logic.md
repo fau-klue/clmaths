@@ -1,5 +1,11 @@
 ---
 layout: default
-title: Mathematical Logic
-description: "A brief introduction into Mathematical Logic"
+title: Predicate Logic
+description: "A brief introduction into Predicate Logic"
 ---
+
+# Predicate Logic
+
+Many linguistic formalims use predicate logic...
+
+## Introduction
