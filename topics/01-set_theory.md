@@ -33,3 +33,7 @@ $$ you \in B $$
 $$ his \notin B $$
 
 Sets are defined by their elements, not by the order of their elements. That means $$\{1,2,3\} $$ and $$\{3,1,2\} $$ is the same set. Also, sets know only unique elements. The set $$\{1,2,3\} $$ and $$\{1,1,2,2,3,3\}$$ is still the same set.
+
+We can visualize sets using Venn Diagrams:
+
+<iframe width="100%" height="300" src="//jsfiddle.net/martialblog/1mkjpxsv/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
