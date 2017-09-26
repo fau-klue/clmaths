@@ -10,7 +10,7 @@ This course will teach you some elementary Set Theory. We look at basic properti
 
 ## Introduction
 
-Sets can be found almost anywhere. For example, we can define a set of all humans on the planet and take one person as an element of that set. All the words in a language can be seen as a set, a word as an element of it. Now for some formal definitions.
+Sets can be found almost anywhere. Sets are considered to be subsets of a large universal set, called the universe. Contents of this universe will depend on the context. For example, we can define the universe as all humans on the planet, then take sets of these people and pick one person as an element of a set. All the words in a language can be seen as a set, a word as an element of it. Now for some formal definitions.
 
 To define a set $$A$$ with the elements $$1,2,3$$ we write:
 
@@ -98,15 +98,20 @@ This means all elements that are in $$A$$ and also in $$B$$. Notice, that this w
 
 $$ A \cap B \cap C = \emptyset $$
 
-### Complements
-
-Everything in the Universe that are not contained in A
-
-$$A'$$
-
 ### Difference
 
-Elements of set B that are not in set A
+The difference of two sets is defined as: All elements of set $$A$$ that are not in set $$B$$. Let's see an example to make this clear:
 
-$$ A \setminus B $$
+$$ A \setminus B = \{1,3\} $$
 
+This means, exclude all elements from $$A$$ that are included in $$B$$. In our example this excludes the element $$2$$. Notice that the notation $$ A \setminus B $$ and $$ A - B $$ are equivalent.
+
+### Complement
+
+We can invert the meaning of a set by its complement. That means every element in the defined universe that is not contained in $$A$$. Notation differs, but complements are usually defined like this:
+
+$$ Universe = \{1,2,3,4,5\}$$
+
+$$ Z = \{1,2\} $$
+
+$$ Z' = \{3,4,5\} $$
