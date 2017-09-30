@@ -14,11 +14,19 @@ Probabilities describe the likelihood of an outcome of a certain event. That mea
 
 $$ 0 \leq p \leq 1 $$
 
-Let's say we want to guess a missing letter in a word. In this case, guessing a letter is the event:
+In order to calculate the probability of an event, we can use a simple formula:
+
+$$ Pr(Event) = \frac{Number\ of\ favorable\ outcomes}{Number\ of\ possible\ outcomes} $$
+
+If we take the classic coin flip example, we would have the one favorable outcome $$heads$$ over the two possible outcomes $$heads$$ and $$tails$$.
+
+$$ Pr(heads) = \frac{1}{2} = 0.5 $$
+
+Now let's look at a more linguistical example. Let's say we want to guess a missing letter in a word. In this case, guessing a letter is the event:
 
 $$ h\ \_\  t $$
 
-There are several possible solutions (outcomes) of our, all of them might be correct (hat, hut, hit). We can describe all possible outcomes of an event as a set. This set is refered to as the probability space. In this case, it contains all letters in the english alphabet:
+There are several possible solutions (outcomes) of our, all of them might be correct (hat, hut, hit). We can describe all possible outcomes of an event as a set. This set is refered to as the sampple or probability space. In this case, it contains all letters in the english alphabet:
 
 $$ S = \{a,b, \dots,z\} $$
 
@@ -32,4 +40,20 @@ How can we find out the probability of a certain letter in the english alphabet?
 
 <iframe width="100%" height="300" src="//jsfiddle.net/martialblog/c96prup7/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
+## Joint Probability
+
+$$ Pr(A,B) = Pr(A) \cap Pr(B) $$
+
 ## Conditional Probability
+
+So far, we have looked at simple probabilities. Now let's us now see how we can adjust probabilities depending on conditions. We will continue with the example we have seen before, guessing a missing character in a word.
+
+$$ h\ \_\  t $$
+
+Here we have to guess the missing character between the h and the t. As we have seen before, taking the probability of the most likely character in the english language would lead us to choose e as the most favorable. However, we now want to factor in the information that we have already seen an h. The question we ask changes from "What is the most probable character?" to "What is the most probable character, given the previous character is an h?".
+
+The general definition of conditional probability:
+
+$$ Pr(A|B) = \frac{Pr(A) \cap Pr(B)}{Pr(B)} $$
+
+This reads as: The probability of $$A$$ given $$B$$ is equal to, the joint probability of $$A$$ and $$B$$ divided by the probability of $$B$$.
