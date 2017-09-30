@@ -37,3 +37,10 @@ bundle exec rake test
 ## Mathematical Notation
 
 For the mathematical notation we use [MathJax](https://www.mathjax.org/). Formulas can be written in TeX, see the MathJax documentation for details.
+
+## Code Snippets
+
+To include Code examples we (for far) use JavaScript and R playgrounds (fiddle), so that the code can directly be included into the courses.
+
+    - https://jsfiddle.net/
+    - http://www.r-fiddle.org/
