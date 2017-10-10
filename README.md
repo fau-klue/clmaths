@@ -44,3 +44,7 @@ To include Code examples we (for far) use JavaScript and R playgrounds (fiddle),
 
     - https://jsfiddle.net/
     - http://www.r-fiddle.org/
+
+## Citation
+
+Format for any citations is the APA style.
