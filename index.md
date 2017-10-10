@@ -6,6 +6,10 @@ A lot of people struggle with maths and getting into it can be scary, [but that'
 
 The topics in this course are aimed at Computational Linguists. That means, we're going to use linguistic examples to make topics directly relatable. It will give you a basic understanding of everything you need to get started in your studies. The topics are not in any specific order, so feel free to begin where and skip whatever you like.
 
+#### Contributing
+
+If you find any errors in these pages or want to contribute, please checkout the repository on GitHub. There you can report issues or contribute directly, to make this course better for future students.
+
 ## Topics
 
 {% for topic in site.pages %}
