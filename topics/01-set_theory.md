@@ -94,7 +94,12 @@ Intersections allow us to find the elements that are overlapping in two or more 
 
 $$ A \cap B = \{2\} $$
 
-This means all elements that are in $$A$$ and also in $$B$$. Notice, that this will reduce the number of elements in our case. If we now also intersect with $$D$$, this will leave us with an empty set. Since none of the elements are in all three sets.
+
+This means all elements that are in $$A$$ and also in $$B$$. Notice, that this will reduce the number of elements in our case. We can use a Venn Diagram to visualize two intersecting sets:
+
+<iframe width="100%" height="500" src="//jsfiddle.net/martialblog/9hw4bsvb/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+If we now also intersect with $$D$$, this will leave us with an empty set. Since none of the elements are in all three sets.
 
 $$ A \cap B \cap C = \emptyset $$
 
