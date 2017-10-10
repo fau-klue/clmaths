@@ -38,7 +38,7 @@ $$ \sum\limits_{x \in S} Pr(x) = 1  $$
 
 How can we find out the probability of a certain letter in the english alphabet? One possible solution would be to take a large amout of text and count how often each letter occures, then calculating the relative frequency (because all frequencies will add up to 1. Let's see a probability distribution of the all english letters:
 
-<iframe width="100%" height="300" src="//jsfiddle.net/martialblog/c96prup7/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="400" src="//jsfiddle.net/martialblog/c96prup7/1/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 ## Joint Probability
 
