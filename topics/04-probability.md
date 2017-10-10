@@ -26,7 +26,7 @@ Now let's look at a more linguistical example. Let's say we want to guess a miss
 
 $$ h\ \_\  t $$
 
-There are several possible solutions (outcomes) of our, all of them might be correct (hat, hut, hit). We can describe all possible outcomes of an event as a set. This set is refered to as the sampple or probability space. In this case, it contains all letters in the english alphabet:
+There are several possible solutions (outcomes) of our, all of them might be correct (hat, hut, hit). We can describe all possible outcomes of an event as a set. This set is refered to as the sample or probability space. In this case, it contains all letters in the english alphabet:
 
 $$ S = \{a,b, \dots,z\} $$
 
@@ -50,10 +50,32 @@ So far, we have looked at simple probabilities. Now let's us now see how we can 
 
 $$ h\ \_\  t $$
 
-Here we have to guess the missing character between the h and the t. As we have seen before, taking the probability of the most likely character in the english language would lead us to choose e as the most favorable. However, we now want to factor in the information that we have already seen an h. The question we ask changes from "What is the most probable character?" to "What is the most probable character, given the previous character is an h?".
+Here we have to guess the missing character between the h and the t. As we have seen before, taking the probability of the most likely character in the english language would lead us to choose e as the most favorable. However, we now want to factor in the information that we have already seen an h. The question we ask changes from "What is the most probable character?" to "What is the most probable character, given the previous character is an h?". In general we formulize a conditional probability like so:
 
-The general definition of conditional probability:
+$$ Pr(A|B) $$
+
+This reads as $$A$$ given $$B$$. Let us now apply this to our missing letter example. In order to find the highest probable letter, given a previous letter, we now have to look at pairs of letters. This is because we want to find the letter pair with the highest probability of being the correct one. The probability space is now all letter pairs (also known as *bigrams*).
+
+$$ S _ {bigrams} = \{aa,ab,ac \dots, zx,zy,zz \} $$
+
+As seen before, probability spaces can be seen as sets. We can thus define subsets of the set $$S _ {bigrams}$$:
+
+$$ S _ {a*} = \{aa,ab,ac \dots, az \} $$
+
+$$ S _ {*h} = \{ah,bh,ch \dots, zh \} $$
+
+We are using the asterisk as a placeholder, meaning "any letter", to define a subset of all bigrams beginning with "a" and a subset of all bigrams ending with an "h". Even better, with this we can define the probability of any bigram as a set intersection:
+
+$$ S _ {th} = S _ {t*} \cap S _ {*h} $$
+
+We can now use these bigram probabilities to define what we are looking for: The highest probability of a bigram given a subset depending on the previously seen letter. For example, the likelihood of "ha" given that the first letter is an "h":
+
+$$ Pr(ha|h*) $$
+
+In order to calculate this, we have to look at the general definition of conditional probability:
 
 $$ Pr(A|B) = \frac{Pr(A) \cap Pr(B)}{Pr(B)} $$
 
-This reads as: The probability of $$A$$ given $$B$$ is equal to, the joint probability of $$A$$ and $$B$$ divided by the probability of $$B$$.
+This reads as: The probability of $$A$$ given $$B$$ is equal to, the joint probability of $$A$$ and $$B$$ divided by the probability of $$B$$. Using what we have seen before, we can now plug in all the probabilities we have:
+
+$$ Pr(ha|h*) = \frac{Pr(*a) \cap Pr(h*)}{Pr(h*)} $$
