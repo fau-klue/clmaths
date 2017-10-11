@@ -46,17 +46,53 @@ $$ M \land J = False $$
 
 This translates to: "The moon is made of green cheese and Jupiter is a gas giant", which is false.
 
+All operations have a so called "truth table", which shows the result given any input.
+
+| $$A$$  | $$B$$  | $$A \land B$$  |
+|:--:|:--:|:--:|
+| True   | True  | True  |
+| True   | False | False |
+| False  | True  | False |
+| False  | False | False |
+
 ### Disjunction
 
-$$ \lor $$
+The disjunction can be translated as the word "or". It yields true if one of the disjuncts is true and is denoted by the $$ \lor $$ symbol.
+
+The truth table for the disjunction:
+
+| $$A$$  | $$B$$  | $$A \lor B$$  |
+|:--:|:--:|:--:|
+| True   | True  | True  |
+| True   | False | True  |
+| False  | True  | True  |
+| False  | False | False |
 
 ### Negation
 
-$$ \neg $$
+The negation can be translated as the word "not". It yields the opposite value of whatever input is given, true becomes false and vice versa. It is denoted by the $$\neg$$ symbol.
+
+The truth table for the negation:
+
+| $$A$$  | $$ \neg A$$  |
+|:--:|:--:|
+| True  | False |
+| False | True  |
 
 ### Conditional
 
-$$ \rightarrow $$
+The condition, or implication, can be translated as "if ... then". It is denoted by the $$\rightarrow$$ symbol.
+
+The truth table for the condition:
+
+| $$A$$  | $$B$$  | $$A \rightarrow B$$  |
+|:--:|:--:|:--:|
+| True   | True  | True  |
+| True   | False | False |
+| False  | True  | True  |
+| False  | False | True  |
+
+Note, that from a false proposition, anything follows (ex falso quodlibet).
 
 ## Predicates
 
