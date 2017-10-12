@@ -100,6 +100,8 @@ As we have seen, propositional logic is a rather blunt instrument, that can not 
 
 $$ D = Dave $$
 
+$$ F = Frank $$
+
 $$ H = Hal $$
 
 New let us use simple predicates to give these entities some properties. Predicates are written in uppercase letters and use parenthesis to take arguments.
@@ -108,7 +110,11 @@ $$ ROBOT(H) $$
 
 $$ HUMAN(D) $$
 
-This will translate as: "Hal is a Robot" and "Dave is a Human". Predicates can also be actions:
+This will translate as: "Hal is a Robot" and "Dave is a Human". These predicates can also take on a boolean value, this happens as they are evaluated according to the universe in which they defined. In the universe $$U$$, in which Hal is a robot and Dave is a human, both sentences would be true.
+
+$$ HUMAN(D) ^ U = True $$
+
+Predicates can also define actions of entities:
 
 $$ JOG(D) $$
 
@@ -122,7 +128,11 @@ $$ R = Report $$
 
 $$ GIVE(H, D, R) $$
 
-This will translate as: "Hal gives Dave the report".
+This will translate as: "Hal gives Dave the report". We can also apply the same operations we have seen before to modify and combine sentences.
+
+$$ ROBOT(H) \land \neg ALIVE(F) $$
+
+This will translate as: "Hal is a Robot and Frank is not alive".
 
 ## Quantifiers
 
