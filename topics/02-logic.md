@@ -136,4 +136,30 @@ This will translate as: "Hal is a Robot and Frank is not alive".
 
 ## Quantifiers
 
+So far we have looked at simple nominal phrases, now we introduce a concept that will allow for generic utterances. Quantifiers can be extend a predicate to make more broad statements. There are two types of quantifiers: the universal quantifier $$\forall$$ and the existential quantifier $$\exists$$. Let us see how we can modify statements with these quantifiers:
+
+$$ \forall x: ROBOT(x) $$
+
+This would translate as: "Everthing is a robot". The quantifier is valid for one variable, in this case $$x$$, which is written directly after the quantifier. So $$\forall$$ is interacting with the variable $$x$$ and not any other variable in the universe. This means if we want to apply a quantifier to more than one variable, we have to write a quantifier for every variable.
+
+$$ \forall x \forall y: LIKE(x, y) $$
+
+This would translate as: "Everthing likes everything". The second quantifier is the existential quantifier. It states, that there is at least one entity with the applied predicate:
+
+$$ \exists x: MAN(x) $$
+
+This would translate as: "Something is a man" or "There is a entity x with the property of being a man". of course, we can apply the operations we have seen before to these quantifiers.
+
+$$ \neg \exists x: LOVE(x, RAYMOND) $$
+
+This would translate as: "Nobody loves Raymond" or "There is no entity x with the property of loving Raymond".
+
+$$ \neg \exists x: LOVE(x, RAYMOND) $$
+
+Let's now look at a more comples example:
+
+$$ \forall x: MAN(x) \rightarrow MORTAL(x) $$
+
+This would translate as: "Every man is mortal" or "Every man must die" or "Valar Morghulis". A more literal translation would be: "For every entity x, if x is a man, then x is mortal".
+
 ## Lambda Calculus
