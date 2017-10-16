@@ -40,7 +40,7 @@ We can visualize sets using Venn Diagrams. Here we define two different sets, th
 
 Enumerating all elements is possible for small sets, however if we have many (or infinite) elements in one set, we rather describe elements by their properties. For example, let us define a set of all natural numbers. Writing an extentional list of these numbers would take a long time, since they are infinite. We can avoid this by using an intensional description:
 
-$$ N = \{ x \in U : x is an even number } $$
+$$ N = \{ x \in U : x\ is\ an\ even\ number \} $$
 
 This means, the set $$N$$ contains the elements $$x$$ from the universe $$U$$ that are a number and are even. More general we can say: For a property $$P$$ and an element $$e$$ of a set $$S$$, we write $$P(e)$$ to indicate that $$s$$ has the property $$P$$. Now we have the possibility to shorten our notation:
 
