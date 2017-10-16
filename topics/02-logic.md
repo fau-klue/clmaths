@@ -96,7 +96,7 @@ Note, that from a false proposition, anything follows (ex falso quodlibet).
 
 ## Predicates
 
-As we have seen, propositional logic is a rather blunt instrument, that can not seen beyond sentences. Predicate logic solves this problem by expanding the logic formalism we have looked at so far. It does so by using smaller units than sentences, its basic unit is an *entity*, which correspond to things in the real world. Futhermore, these entities have properties (predicates) assigned to them. Let see an example, let us define three simple entities:
+As we have seen, propositional logic is a rather blunt instrument, that can not seen beyond sentences. Predicate logic solves this problem by expanding the logic formalism we have looked at so far. It does so by using smaller units than sentences, its basic unit is an *entity*, which corresponds to a thing in the real world. Futhermore, these entities have properties (predicates) assigned to them. Let see an example, let us define three simple entities:
 
 $$ D = Dave $$
 
@@ -104,7 +104,7 @@ $$ F = Frank $$
 
 $$ H = Hal $$
 
-New let us use simple predicates to give these entities some properties. Predicates are written in uppercase letters and use parenthesis to take arguments.
+New let us now use simple predicates to give these entities some properties. Predicates are written in uppercase letters and use parenthesis to take arguments.
 
 $$ ROBOT(H) $$
 
@@ -118,7 +118,7 @@ Predicates can also define actions of entities:
 
 $$ JOG(D) $$
 
-This will translate as: "Dave jogs". As you can see we defined an intransitive verb as and action of an entity. This also applies to transitive verbs, in that case the predicate will take two arguments.
+This will translate as: "Dave jogs". This will also evaluate to true or false depending on the state of the universe. As you can see we defined an intransitive verb as and action of an entity. This also applies to transitive verbs, in that case the predicate will take two arguments.
 
 $$ LIKE(D, H) $$
 
@@ -130,9 +130,15 @@ $$ GIVE(H, D, R) $$
 
 This will translate as: "Hal gives Dave the report". We can also apply the same operations we have seen before to modify and combine sentences.
 
-$$ ROBOT(H) \land \neg ALIVE(F) $$
+$$ ROBOT(H) \land ALIVE(F) $$
 
-This will translate as: "Hal is a Robot and Frank is not alive".
+This will translate as: "Hal is a Robot and Frank is alive". In the universe in which Hal is a robot and Frank is dead, this will evaluate to:
+
+$$ ROBOT(H) = True $$
+
+$$ ALIVE(F) = True $$
+
+$$ ROBOT(H) \land ALIVE(F) = True $$
 
 ## Quantifiers
 
