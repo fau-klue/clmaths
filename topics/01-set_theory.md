@@ -93,7 +93,7 @@ $$ A \cup B \cup D = \{0,1,2,3,4\} $$
 
 The formal definition would be:
 
-$$ A \cup B = \{ x \in U : x \in A or x \in B \}$$
+$$ A \cup B = \{ x \in U : x \in A\ or\ x \in B \}$$
 
 ### Intersection
 
@@ -111,7 +111,7 @@ $$ A \cap B \cap C = \emptyset $$
 
 The formal definition of the intersection would be:
 
-$$ A \cap B = \{ x \in U : x \in A and x \in B \}$$
+$$ A \cap B = \{ x \in U : x \in A\ and\ x \in B \}$$
 
 ### Difference
 
@@ -123,7 +123,7 @@ This means, exclude all elements from $$A$$ that are included in $$B$$. In our e
 
 The formal definition would be:
 
-$$ A \setminus B = \{ x \in U : x \in A and x \notin B \}$$
+$$ A \setminus B = \{ x \in U : x \in A\ and\ x \notin B \}$$
 
 ### Complement
 
