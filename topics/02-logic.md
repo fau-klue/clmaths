@@ -6,7 +6,7 @@ description: "A brief introduction into Predicate Logic"
 
 # Predicate Logic
 
-Logic as a formal system can be used by linguistics compare and analyze natural language. This formal system can be defined very clearly and thus be also used in computer science, for example: In the field of Artificial Intelligence formal logic can be used for reasoning. We will look at some basic logic formalims and then briefly look at Lambda calculus.
+Logic as a formal system can be used by linguistics compare and analyze natural language. This formal system can be defined very clearly and thus be also used in computer science, for example: In the field of Artificial Intelligence formal logic can be used for reasoning. We will look at some basic logic formalism and then briefly look at Lambda calculus.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ $$ J = Jupiter\ is\ a\ gas\ giant = True $$
 
 $$ M = The\ moon\ is\ made\ of\ green\ cheese = False $$
 
-Now we can perform a conjunction to combine these, changing the resuling boolean.
+Now we can perform a conjunction to combine these, changing the resulting boolean.
 
 $$ S \land J = True $$
 
@@ -96,7 +96,7 @@ Note, that from a false proposition, anything follows (ex falso quodlibet).
 
 ## Predicates
 
-As we have seen, propositional logic is a rather blunt instrument, that can not seen beyond sentences. Predicate logic solves this problem by expanding the logic formalism we have looked at so far. It does so by using smaller units than sentences, its basic unit is an *entity*, which corresponds to a thing in the real world. Futhermore, these entities have properties (predicates) assigned to them. Let see an example, let us define three simple entities:
+As we have seen, propositional logic is a rather blunt instrument, that can not seen beyond sentences. Predicate logic solves this problem by expanding the logic formalism we have looked at so far. It does so by using smaller units than sentences, its basic unit is an *entity*, which corresponds to a thing in the real world. Furthermore, these entities have properties (predicates) assigned to them. Let see an example, let us define three simple entities:
 
 $$ D = Dave $$
 
@@ -146,11 +146,11 @@ So far we have looked at simple nominal phrases, now we introduce a concept that
 
 $$ \forall x: ROBOT(x) $$
 
-This would translate as: "Everthing is a robot". The quantifier is valid for one variable, in this case $$x$$, which is written directly after the quantifier. So $$\forall$$ is interacting with the variable $$x$$ and not any other variable in the universe. This means if we want to apply a quantifier to more than one variable, we have to write a quantifier for every variable.
+This would translate as: "Everything is a robot". The quantifier is valid for one variable, in this case $$x$$, which is written directly after the quantifier. So $$\forall$$ is interacting with the variable $$x$$ and not any other variable in the universe. This means if we want to apply a quantifier to more than one variable, we have to write a quantifier for every variable.
 
 $$ \forall x \forall y: LIKE(x, y) $$
 
-This would translate as: "Everthing likes everything". The second quantifier is the existential quantifier. It states, that there is at least one entity with the applied predicate:
+This would translate as: "Everything likes everything". The second quantifier is the existential quantifier. It states, that there is at least one entity with the applied predicate:
 
 $$ \exists x: MAN(x) $$
 
@@ -162,7 +162,7 @@ This would translate as: "Nobody loves Raymond" or "There is no entity x with th
 
 $$ \neg \exists x: LOVE(x, RAYMOND) $$
 
-Let's now look at a more comples example:
+Let's now look at a more complex example:
 
 $$ \forall x: MAN(x) \rightarrow MORTAL(x) $$
 

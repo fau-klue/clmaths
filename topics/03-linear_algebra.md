@@ -6,7 +6,7 @@ description: "A brief introduction into Linear Algebra"
 
 # Linear Algebra
 
-Linear algebra is the heart and soul of deep learning algorithms in machine learning. This couse will give you a good, and hopefully intuitive, knowledge of vectors and matrices. These concepts are key to many theories in computational linguistics, some of which we will mention in the chapter.
+Linear algebra is the heart and soul of deep learning algorithms in machine learning. This course will give you a good, and hopefully intuitive, knowledge of vectors and matrices. These concepts are key to many theories in computational linguistics, some of which we will mention in the chapter.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Often, vectors are introduced an arrow in a two dimensional space. In computer/d
 | 132  | 231  | 321  |
 | 222  | 321  | 132  |
 
-We can now represent each document (mesurement/data point) as a vector with three values.
+We can now represent each document (measurement/data point) as a vector with three values.
 
 $$ text1 = \begin {bmatrix} 132 \\ 231 \\ 321 \end{bmatrix} $$
 
@@ -53,7 +53,7 @@ Like before, we look at matrices from a data science perspective. Looking back a
 
 $$ D = \begin{bmatrix}132 & 231 & 321 \\ 222 & 321 & 132\end{bmatrix} $$
 
-Each row representing a document (mesurement/data point). Again, to specify one specific element in a matrix we use indices, this time however we need two values since we have a two-dimensional field.
+Each row representing a document (measurement/data point). Again, to specify one specific element in a matrix we use indices, this time however we need two values since we have a two-dimensional field.
 
 $$ D _ {1,1} = 132 $$
 
@@ -83,7 +83,7 @@ As we have seen, a scalar is just a single value. Multiplying scalars with a mat
 
 $$ 2 * \begin{bmatrix}3 & 8 \\ 7 & 5 \end{bmatrix} = $$
 
-$$  \begin{bmatrix}2 * 3 & 2 * 8 \\ 2 * 7 & 2 * 5 \end{bmatrix} = \begin{bmatrix} 6 & 16 \\ 14 & 10 \end{bmatrix} $$
+$$ \begin{bmatrix}2 * 3 & 2 * 8 \\ 2 * 7 & 2 * 5 \end{bmatrix} = \begin{bmatrix} 6 & 16 \\ 14 & 10 \end{bmatrix} $$
 
 ### Matrix Addition
 

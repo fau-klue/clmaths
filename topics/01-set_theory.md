@@ -38,7 +38,7 @@ We can visualize sets using Venn Diagrams. Here we define two different sets, th
 
 <iframe width="100%" height="300" src="//jsfiddle.net/martialblog/1mkjpxsv/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Enumerating all elements is possible for small sets, however if we have many (or infinite) elements in one set, we rather describe elements by their properties. For example, let us define a set of all natural numbers. Writing an extentional list of these numbers would take a long time, since they are infinite. We can avoid this by using an intensional description:
+Enumerating all elements is possible for small sets, however if we have many (or infinite) elements in one set, we rather describe elements by their properties. For example, let us define a set of all natural numbers. Writing an extensional list of these numbers would take a long time, since they are infinite. We can avoid this by using an intentional description:
 
 $$ N = \{ x \in U : x\ is\ an\ even\ number \} $$
 
