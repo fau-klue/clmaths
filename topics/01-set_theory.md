@@ -38,10 +38,13 @@ We can visualize sets using Venn Diagrams. Here we define two different sets, th
 
 <iframe width="100%" height="300" src="//jsfiddle.net/martialblog/1mkjpxsv/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-Enumerating all elements is possible for small sets, however if we have many (or infinite) elements in one set, we rather describe elements by their properties. For a property $$P$$ and an element $$e$$ of a set $$S$$, we write $$P(e)$$ to indicate that $$s$$ has the property $$P$$. Now we have the possibility to shorten our notation:
+Enumerating all elements is possible for small sets, however if we have many (or infinite) elements in one set, we rather describe elements by their properties. For example, let us define a set of all natural numbers. Writing an extentional list of these numbers would take a long time, since they are infinite. We can avoid this by using an intensional description:
 
-$$ A = \{e ∈ S : P(e)\} $$
+$$ N = \{ x \in U : x is an even number } $$
 
+This means, the set $$N$$ contains the elements $$x$$ from the universe $$U$$ that are a number and are even. More general we can say: For a property $$P$$ and an element $$e$$ of a set $$S$$, we write $$P(e)$$ to indicate that $$s$$ has the property $$P$$. Now we have the possibility to shorten our notation:
+
+$$ A = \{e \in S : P(e)\} $$
 This reads: The set $$A$$ consists of all elements $$e$$, of the set $$S$$, with the property $$P$$. The colon $$:$$ is read a "such as".
 
 Finally, we have to define a special set: The Set that contains no elements. Any set without elements is called an "Empty Set" and is notated as such:
@@ -88,12 +91,15 @@ The union of $$A$$ and $$B$$ contains everything that is either in $$A$$ or in $
 
 $$ A \cup B \cup D = \{0,1,2,3,4\} $$
 
+The formal definition would be:
+
+$$ A \cup B = \{ x \in U : x \in A or x \in B \}$$
+
 ### Intersection
 
 Intersections allow us to find the elements that are overlapping in two or more sets. Meaning, all elements that are contained in all of the sets. Here is an example:
 
 $$ A \cap B = \{2\} $$
-
 
 This means all elements that are in $$A$$ and also in $$B$$. Notice, that this will reduce the number of elements in our case. We can use a Venn Diagram to visualize two intersecting sets:
 
@@ -103,6 +109,10 @@ If we now also intersect with $$D$$, this will leave us with an empty set. Since
 
 $$ A \cap B \cap C = \emptyset $$
 
+The formal definition of the intersection would be:
+
+$$ A \cap B = \{ x \in U : x \in A and x \in B \}$$
+
 ### Difference
 
 The difference of two sets is defined as: All elements of set $$A$$ that are not in set $$B$$. Let's see an example to make this clear:
@@ -110,6 +120,10 @@ The difference of two sets is defined as: All elements of set $$A$$ that are not
 $$ A \setminus B = \{1,3\} $$
 
 This means, exclude all elements from $$A$$ that are included in $$B$$. In our example this excludes the element $$2$$. Notice that the notation $$ A \setminus B $$ and $$ A - B $$ are equivalent.
+
+The formal definition would be:
+
+$$ A \setminus B = \{ x \in U : x \in A and x \notin B \}$$
 
 ### Complement
 
@@ -120,3 +134,7 @@ $$ Universe = \{1,2,3,4,5\}$$
 $$ Z = \{1,2\} $$
 
 $$ Z' = \{3,4,5\} $$
+
+The formal definition would be:
+
+$$ A' = \{ x \in U : x \notin A \}$$
