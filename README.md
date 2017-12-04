@@ -4,7 +4,7 @@
 
 This is a small collection of basic mathematics for your off-the-shelf Computer Linguist.
 
-https://martialblog.github.io/clmaths/
+https://fau-klue.github.io/clmaths/
 
 # Development and Contributing
 
